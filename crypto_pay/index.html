@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name='robots' content='noindex,nofollow' />
+	<title>Crypto pay</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="module" defer src="js/script.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container container">
+			<div class="header__logo">
+				<div class="logo"><img src="img/icons/logo.svg" alt=""></div>
+			</div>
+			<nav class="header__menu">
+				<a href="#usecases">Use cases</a>
+				<a href="#features">Features</a>
+				<a href="#start">How to start</a>
+			</nav>
+			<div class="header__mode-switcher">
+				<button class="mode-switcher"><img src="img/icons/light-mode.svg" alt=""></button>
+			</div>
+			<a href="#get-started" class="header__action-btn btn btn_sec">Get started</a>
+		</div>
+	</header>
+
+	<section class="intro">
+		<div class="intro__container container">
+			<div class="intro__wrapper">
+
+				<div class="intro__body">
+					<h1 class="intro__title title">Crypto payments for <span>telegram bots</span></h1>
+					<div class="intro__text text">Seamlessly accept crypto payments <br> in your Telegram bots and services.</div>
+					<button class="intro__action-btn btn">Get started</button>
+					<div class="intro-bots">
+						<div class="intro-bots__list">
+							<div class="intro-bots__item"><img src="img/popular-bot-1.png" alt=""></div>
+							<div class="intro-bots__item"><img src="img/popular-bot-2.png" alt=""></div>
+							<div class="intro-bots__item"><img src="img/popular-bot-3.png" alt=""></div>
+							<div class="intro-bots__item"><img src="img/popular-bot-4.png" alt=""></div>
+							<div class="intro-bots__item"><img src="img/popular-bot-5.png" alt=""></div>
+						</div>
+						<div class="intro-bots__text text">Popular bots use Crypto Pay</div>
+					</div>
+				</div>
+
+				<div class="intro__phone">
+					<div class="intro-phone"><img src="img/phone.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="usecases" id="usecases">
+		<div class="usecases__container container">
+			<div class="usecases__wrapper slider">
+				<div class="slider__line">
+
+					<div class="slider__slide">
+						<div class="slider__content">
+							<div class="tg">
+								<div class="tg__wrapper">
+									<div class="tg__msg-list">
+										<div class="tg-msg">
+											<img src="img/icons/money.png" alt=""> You sent 5,5 USDT ($5.50).
+											<br><br>
+											<b>Recipient:</b> GoodsBot
+											<br><br>
+											<img src="img/icons/receipt.png" alt=""> 1 month of Blazing Fast VPN <img
+												src="img/icons/flash.png" alt="">
+											<span class="time">21:25</span>
+											<div class="clear"></div>
+										</div>
+										<div class="tg-msg tail">
+											<img src="img/icons/key.png" alt=""> Access key: VPN-X3Y7-Z1W9-R6T2-Q4V8
+											<span class="time">21:25</span>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="usecases__body">
+								<div class="usecases__title title"><span>Instant Auto Sales:</span> Boost conversion</div>
+								<div class="usecases__text text">Immediately deliver digital products and services to your users.
+								</div>
+								<button class="usecases__action-btn btn">Open API Docs</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider__slide">
+						<div class="slider__content">
+							<div class="tg">
+								<div class="tg__wrapper">
+									<div class="tg__msg-list">
+										<div class="tg-msg"><img src="img/icons/money.png" alt=""> You sent 3,5 TON ($5.08).
+											<br><br>
+											<b>Recipient:</b> CuteCats Channel
+											<br><br>
+											<img src="img/icons/receipt.png" alt=""> Exclusive access to the channe <img
+												src="img/icons/cat.png" alt="">
+											<span class="time">21:30</span>
+											<div class="clear"></div>
+										</div>
+									</div>
+									<div class="tg__actions">
+										<button class="tg-link tg-action">View Channel</button>
+									</div>
+								</div>
+							</div>
+							<div class="usecases__body">
+								<div class="usecases__title title"><span>Channels integration:</span> Seamless access</div>
+								<div class="usecases__text text">Automatically unlock exclusive content to your users.</div>
+								<button class="usecases__action-btn btn">Open API Docs</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider__slide">
+						<div class="slider__content">
+							<div class="tg">
+								<div class="tg__wrapper">
+									<div class="tg__msg-list">
+										<div class="tg-msg"><img src="img/icons/money.png" alt=""> You sent 3,99 USDT ($3.99).
+											<br><br>
+											<b>Recipient:</b> @StoresBot
+											<br><br>
+											<img src="img/icons/receipt.png" alt=""> One month of Premium access<img src="img/icons/star.png"
+												alt="">
+											<span class="time">22:10</span>
+											<div class="clear"></div>
+										</div>
+									</div>
+									<code class="tg-code">
+<pre>
+<span class="blue">Invoice</span> (
+	<span class="blue">payload:</span>	"item:monthly_premium",
+	<span class="blue">status:</span>		"paid",
+	<span class="blue">amount:</span>	"3.99",
+	<span class="blue">asset:</span>		"USDT"
+)</pre>
+									</code>
+								</div>
+							</div>
+							<div class="usecases__body">
+								<div class="usecases__title title"><span>Endless customization</span><br> with Webhooks</div>
+								<div class="usecases__text text">Receive successful payment notifications in real-time. Integrate to any
+									scenario of your service.</div>
+								<button class="usecases__action-btn btn">Open API Docs</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="slider__wrapper usecases__pagination">
+					<div class="slider__cur-count">01</div>
+					<div class="slider__dot active-dot"></div>
+					<div class="slider__dot"></div>
+					<div class="slider__dot"></div>
+					<div class="slider__all-count">03</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="features" id="features">
+		<div class="features__container container">
+			<div class="features__grid">
+
+				<div class="features-currencies features__item">
+					<div class="features-currencies__body">
+						<div class="features-currencies-item">
+							<img src="img/curr-item-1.svg" alt="" class="features-currencies-item__img">
+							<div class="features-currencies-item__text">ETH</div>
+						</div>
+						<div class="features-currencies-item">
+							<img src="img/curr-item-2.svg" alt="" class="features-currencies-item__img">
+							<div class="features-currencies-item__text">USDT</div>
+						</div>
+						<div class="features-currencies-item">
+							<img src="img/curr-item-3.svg" alt="" class="features-currencies-item__img">
+							<div class="features-currencies-item__text">TON</div>
+						</div>
+						<div class="features-currencies-item">
+							<img src="img/curr-item-4.svg" alt="" class="features-currencies-item__img">
+							<div class="features-currencies-item__text">BTC</div>
+						</div>
+						<div class="features-currencies-item">
+							<img src="img/curr-item-5.svg" alt="" class="features-currencies-item__img">
+							<div class="features-currencies-item__text">TRX</div>
+						</div>
+						<div class="features-currencies-item">
+							<img src="img/curr-item-6.svg" alt="" class="features-currencies-item__img">
+							<div class="features-currencies-item__text">LTC</div>
+						</div>
+						<div class="features-currencies-item">
+							<img src="img/curr-item-7.svg" alt="" class="features-currencies-item__img">
+							<div class="features-currencies-item__text">USDC</div>
+						</div>
+						<div class="features-currencies-item">
+							<img src="img/curr-item-8.svg" alt="" class="features-currencies-item__img">
+							<div class="features-currencies-item__text">BNB</div>
+						</div>
+					</div>
+					<div class="features-currencies__text-block">
+						<div class="features-currencies__title subtitle">Accept a wide range of cryptocurrencies</div>
+						<div class="features-currencies__text text">Bill any supported cryptocurrencies with asset parameter in
+							<span class="blue">GetInvoice</span> method
+						</div>
+					</div>
+				</div>
+
+				<div class="features-oneclick features__item">
+					<div class="features-oneclick__body">
+						<div class="features-oneclick__btn">
+							<img src="img/icons/tree.png" alt="">Create App
+						</div>
+						<div class="features-oneclick__cursor">
+							<svg xmlns="http://www.w3.org/2000/svg" width="46" height="50" viewBox="0 0 46 50" fill="none">
+								<path
+									d="M11.1275 3.64677C6.7178 1.12449 1.36473 4.88154 2.23774 9.88607L8.10158 43.5003C8.98108 48.542 15.9691 49.1632 17.724 44.3556L22.4947 31.2864C22.782 30.4994 23.5293 29.9749 24.3671 29.9723L38.2797 29.9285C43.3975 29.9124 45.189 23.1294 40.7465 20.5884L11.1275 3.64677Z"
+									fill="url(#paint0_linear_955_4961)" stroke="#F1F5F9" stroke-width="4" />
+								<defs>
+									<linearGradient id="paint0_linear_955_4961" x1="1.90306" y1="-33.3301" x2="-24.3108" y2="39.2676"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="#9FCCFA" />
+										<stop offset="1" stop-color="#0974F1" />
+									</linearGradient>
+								</defs>
+							</svg>
+						</div>
+					</div>
+					<div class="features-oneclick__title subtitle">One click to start</div>
+					<div class="features-oneclick__text text">Open <span class="blue">@CryptoBot</span>, go to <span
+							class="blue">Crypto Pay</span> and tap Create App to get API Token</div>
+				</div>
+
+				<div class="features-rates features__item">
+					<div class="features-rates__body">
+						<div class="features-rates__swap-list">
+							<div class="features-rates__item" data-order="1">
+								<img src="img/curr-item-2.svg" alt="">
+							</div>
+							<div class="features-rates__item" data-order="2">
+								<img src="img/curr-item-4.svg" alt="">
+							</div>
+							<div class="features-rates__item" data-order="3">
+								<img src="img/curr-item-3.svg" alt="">
+							</div>
+						</div>
+						<div class="features-rates__swap-btn">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 11" fill="none">
+								<path d="M1 5.45438H20.01M20.01 5.45438L15.5556 1M20.01 5.45438L15.5556 9.90876" stroke="#29313D"
+									stroke-opacity="0.92" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 11" fill="none">
+								<path d="M1 5.45438H20.01M20.01 5.45438L15.5556 1M20.01 5.45438L15.5556 9.90876" stroke="#29313D"
+									stroke-opacity="0.92" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+							</svg>
+						</div>
+						<img src="img/dollar.svg" alt="" class="features-rates__dollar">
+					</div>
+					<div class="features-rates__title subtitle">Real-time<br> exchange rates</div>
+					<div class="features-rates__text text">Request up to date currency rate with the <span
+							class="blue">getExchangeRates</span> API method</div>
+				</div>
+
+				<div class="features-statistics features__item">
+					<div class="features-statistics__body">
+						<div class="tg">
+							<div class="tg__wrapper">
+								<div class="tg__msg-list">
+									<div class="tg-msg active">
+										Application Statistics <b>@GoodsBot</b> for <b>all time:</b><br>
+										<br>
+										Volume: <b>$204,920</b><br>
+										<br>
+										The number of created invoices: <b>16,256</b><br>
+										Number of payments: <b>9,353</b><br>
+										Number of users: <b>5,606</b><br>
+										<br>
+										Conversion: <b>57%</b>
+										<span class="time">21:30</span>
+										<div class="clear"></div>
+									</div>
+									<div class="tg-msg">
+										Application Statistics <b>@GoodsBot</b> for <b>today:</b><br>
+										<br>
+										Volume: <b>$6,530</b><br>
+										<br>
+										The number of created invoices: <b>2,569</b><br>
+										Number of payments: <b>1,253</b><br>
+										Number of users: <b>1,606</b><br>
+										<br>
+										Conversion: <b>48%</b>
+										<span class="time">21:30</span>
+										<div class="clear"></div>
+									</div>
+									<div class="tg-msg">
+										Application Statistics <b>@GoodsBot</b> for <b>yesterday:</b><br>
+										<br>
+										Volume: <b>$8,216</b><br>
+										<br>
+										The number of created invoices: <b>4,980</b><br>
+										Number of payments: <b>3,012</b><br>
+										Number of users: <b>3,606</b><br>
+										<br>
+										Conversion: <b>60%</b>
+										<span class="time">21:30</span>
+										<div class="clear"></div>
+									</div>
+								</div>
+								<div class="tg__actions">
+									<div class="tg-action active">All Time</div>
+									<div class="tg-action">Today</div>
+									<div class="tg-action">Yesterday</div>
+									<div class="tg-action">Week</div>
+									<div class="tg-action">Month</div>
+									<div class="tg-action">&lt; Back</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="features-statistics__title subtitle">Payment statistics</div>
+					<div class="features-statistics__text text">Open <span class="blue">@CryptoBot</span>, go to <span
+							class="blue">Crypto Pay</span> and <span class="blue">My Apps</span>, App Name to get Statistics</div>
+				</div>
+
+				<div class="features-send features__item">
+					<div class="features-send__body">
+						<div class="features-send__phone">
+							<div class="features-send__notice-list">
+								<div class="phone-notice" data-order="3">
+									<div class="phone-notice__image-part">
+										<div class="phone-notice__image">
+											<img class="phone-notice__image-bot" src="img/icons/logo.svg" alt="">
+											<img class="phone-notice__image-app" src="img/icons/tg-logo.svg" alt="">
+										</div>
+									</div>
+									<div class="phone-notice__body">
+										<div class="phone-notice__header">
+											<div class="phone-notice__title">Crypto Bot</div>
+											<div class="phone-notice__time">now</div>
+										</div>
+										<div class="tg-msg">
+											<img src="img/icons/money.png" alt="">You received 3448 TON ($5000)
+											from @CryptoBot #A777<br>
+											<br>
+											<img src="img/icons/speech.png" alt="">Design contest awards <img src="img/icons/award.png"
+												alt="">
+
+										</div>
+									</div>
+								</div>
+								<div class="phone-notice" data-order="1">
+									<div class="phone-notice__image-part">
+										<div class="phone-notice__image">
+											<img class="phone-notice__image-bot" src="img/icons/logo.svg" alt="">
+											<img class="phone-notice__image-app" src="img/icons/tg-logo.svg" alt="">
+										</div>
+									</div>
+									<div class="phone-notice__body">
+										<div class="phone-notice__header">
+											<div class="phone-notice__title">Crypto Bot</div>
+											<div class="phone-notice__time">now</div>
+										</div>
+										<div class="tg-msg">
+											<img src="img/icons/money.png" alt="">You received 8478 TON ($10000)
+											from @CryptoBot #A820<br>
+											<br>
+											<img src="img/icons/speech.png" alt="">Congrats! You are winner <img src="img/icons/hands.png"
+												alt="">
+
+										</div>
+									</div>
+								</div>
+								<div class="phone-notice" data-order="2">
+									<div class="phone-notice__image-part">
+										<div class="phone-notice__image">
+											<img class="phone-notice__image-bot" src="img/icons/logo.svg" alt="">
+											<img class="phone-notice__image-app" src="img/icons/tg-logo.svg" alt="">
+										</div>
+									</div>
+									<div class="phone-notice__body">
+										<div class="phone-notice__header">
+											<div class="phone-notice__title">Crypto Bot</div>
+											<div class="phone-notice__time">now</div>
+										</div>
+										<div class="tg-msg">
+											<img src="img/icons/money.png" alt="">You received 2300 TON ($1000)
+											from @CryptoBot #A820<br>
+											<br>
+											<img src="img/icons/speech.png" alt="">We appreciaate your interest <img
+												src="img/icons/rocket.png" alt="">
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="features-send__title subtitle">Send coins to users</div>
+					<div class="features-send__text text">Automate payouts to users with <span class="blue">transfer</span> API
+						method</div>
+				</div>
+
+				<div class="features-anon features__item">
+					<div class="features-anon__body">
+						<div class="tg">
+							<div class="tg__wrapper">
+								<div class="tg__msg-list">
+									<div class="tg-msg tail" data-order="3">
+										<img src="img/icons/tree.png" alt=""> <b>Anonymous</b> paid your invoice #IV53.
+										You received <b>3442 TON ($5000).</b><br>
+										<br>
+										<img src="img/icons/speech.png" alt="">A generous donation! Keep working hard <img
+											src="img/icons/hard.png" alt="">
+										<span class="time">21:25</span>
+										<div class="clear"></div>
+									</div>
+									<div class="tg-msg tail" data-order="1">
+										<img src="img/icons/tree.png" alt=""> <b>Anonymous</b> paid your invoice #IV80.
+										You received <b>3823 TON ($6500).</b><br>
+										<br>
+										<img src="img/icons/speech.png" alt="">A bountiful gift! Keep reaching for the stars! <img
+											src="img/icons/hands.png" alt="">
+										<span class="time">21:25</span>
+										<div class="clear"></div>
+									</div>
+									<div class="tg-msg tail" data-order="2">
+										<img src="img/icons/tree.png" alt=""> <b>Anonymous</b> paid your invoice #IV80.
+										You received <b>1176 TON ($2000).</b><br>
+										<br>
+										<img src="img/icons/speech.png" alt="">A substantial gift! Keep striving for excellence! <img
+											src="img/icons/party.png" alt="">
+										<span class="time">21:25</span>
+										<div class="clear"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="features-anon__title subtitle">Anonymous payments</div>
+					<div class="features-anon__text text">Use allow_anonymous parameter in <span class="blue">createInvoice</span>
+						method to give user an option to remain private</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="start" id="start">
+		<div class="start__container container">
+			<div class="start__title title">Quick start using <span class="blue">Crypto Pay</span></div>
+			<div class="start__steps">
+				<div class="start-step">
+					<div class="tg">
+						<div class="tg__wrapper">
+							<div class="tg__msg-list">
+								<div class="tg-msg">
+									Here is the token for the app @GoodsBot<br>
+									<br>
+									114935:AA9xMcRqHYZYl6CQlkhBStMAwTFQ1s6iJHM<br>
+									<br>
+									<img src="img/icons/Warning.png" alt="">This token can be used by anyone to control your app. Keep and
+									store
+									it
+									safely.
+									<span class="time">21:30</span>
+									<div class="clear"></div>
+								</div>
+								<div class="tg-action">Revoke Token</div>
+							</div>
+						</div>
+					</div>
+					<div class="start-step__body">
+						<div class="start-step__number">1</div>
+						<div class="start-step__text-block">
+							<div class="start-step__title subtitle">Authorizing your app</div>
+							<ol class="start-step__ol text">
+								<li>Open <span class="blue">@CryptoBot</span></li>
+								<li>Go to <span class="blue">Crypto Pay</span></li>
+								<li>Tap <span class="blue">Create App</span></li>
+								<li>Get <span class="blue">API Token</span></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="start-step">
+					<div class="tg">
+						<div class="tg__wrapper">
+							<code class="tg-code">
+<pre>
+asset<span class="blue">=</span><span class="yellow">TON</span><span class="red">&</span>amount<span class="blue">=</span><span class="yellow">2.75</span>
+{"asset":<span class="blue">"TON"</span>, "amount": <span class="blue">"2.75"</span>}
+</pre>
+							</code>
+						</div>
+					</div>
+					<div class="start-step__body">
+						<div class="start-step__number">2</div>
+						<div class="start-step__text-block">
+							<div class="start-step__title subtitle">Crypto Pay API Request</div>
+							<div class="start-step__text text">Requests are only served over HTTPS To pass parameters use:</div>
+							<ul class="start-step__ul text">
+								<li>URL query string</li>
+								<li>application/json</li>
+								<li>application/x-www-form-urlencoded</li>
+								<li>multipart/form-data</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="start-step">
+					<div class="tg">
+						<div class="tg__wrapper">
+							<code class="tg-code">
+<pre>
+<span class="blue">Invoice</span> (
+	<span class="blue">payload:</span>	"item:monthly_premium",
+	<span class="blue">status:</span>		"paid",
+	<span class="blue">amount:</span>	"3.99",
+	<span class="blue">asset:</span>		"USDT"
+)
+</pre>
+							</code>
+						</div>
+					</div>
+					<div class="start-step__body">
+						<div class="start-step__number">3</div>
+						<div class="start-step__text-block">
+							<div class="start-step__title subtitle">Getting updates</div>
+							<div class="start-step__text text">There are two ways of receiving updates for your app:</div>
+							<ul class="start-step__ul text">
+								<li>getInvoices <span>method to get a list of created invoices.</span></li>
+								<li>Webhooks <span>to receive updates in realtime.</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="api">
+		<div class="api__container container">
+			<div class="api__wrapper">
+				<div class="api__body">
+					<div class="api__title title">Crypto Pay API</div>
+					<div class="api__text text">Explore available methods and types and integrate them in any programming
+						language.</div>
+					<button class="api__api-btn btn btn_hollow">Open API Docs</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="community">
+		<div class="community__container container">
+			<div class="community__title title">Join dev community</div>
+			<div class="community__text text">Connect with bot developers and explore the possibilities our crypto payments
+				service unlocks.</div>
+			<div class="community__list">
+				<div class="community-item">
+					<div class="community-item__image"><img src="img/icons/community-1.svg" alt=""></div>
+					<div class="community-item__text text">crypto-pay-api</div>
+				</div>
+				<div class="community-item">
+					<div class="community-item__image"><img src="img/icons/community-2.svg" alt=""></div>
+					<div class="community-item__text text">CryptoPay</div>
+				</div>
+				<div class="community-item">
+					<div class="community-item__image"><img src="img/icons/community-3.svg" alt=""></div>
+					<div class="community-item__text text">crypto-pay-api</div>
+				</div>
+				<div class="community-item">
+					<div class="community-item__image"><img src="img/icons/community-4.svg" alt=""></div>
+					<div class="community-item__text text">aiocryptopay</div>
+				</div>
+				<div class="community-item">
+					<div class="community-item__image"><img src="img/icons/community-5.svg" alt=""></div>
+					<div class="community-item__text text">cryptobot-sdk-golang</div>
+				</div>
+			</div>
+			<button class="community__action-btn btn">Open Devs chat</button>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__container  container">
+			<div class="footer__header header__container">
+				<div class="header__logo">
+					<div class="logo"><img src="img/icons/logo.svg" alt=""></div>
+				</div>
+				<nav class="header__menu">
+					<a href="#usecases">Use cases</a>
+					<a href="#features">Features</a>
+					<a href="#start">How to start</a>
+				</nav>
+				<a href="#get-started" class=" btn btn_hollow">Get started</a>
+			</div>
+			<div class="footer__copyright text">©2023 Crypto Bot</div>
+		</div>
+	</footer>
+</body>
+
+</html>

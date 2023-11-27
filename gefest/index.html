@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gefest</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="module" defer src="js/script.js"></script>
+</head>
+<body>
+
+<header class="header">
+	<div class="header__container container">
+		<div class="header__logo logo">
+			<a href="#" class="logo__link">GEFEST</a>
+			<div class="logo__descr">Производство и продажа<br>металлопроката</div>
+		</div>
+		<div class="header__body">
+			<button type="button" class="header__btn btn">У вас уже есть поставщик?</button>
+			<div class="header__phone-block">
+				<a href="tel:+7 (495) 444-44-44" class="header__phone">+7 (495) 444-44-44</a>
+				<button type="button" data-popup-id="popup-callback" class="header__callback"><img src="img/phone.svg" alt="обратный вызов"><span>Заказать обратный звонок</span></button>
+			</div>
+		</div>
+	</div>
+</header>
+<section class="promo">
+	<div class="promo__container container">
+
+		<div class="promo__offer">
+			<div class="promo__title title">Металлопрокат в наличии в Новосибирске от производителя с доставкой до вас за 1-2 дня по цене ниже рыночной</div>
+			<div class="promo__subtitle subtitle">Склады и филиалы производства в 26 крупных городах по всей территории РФ</div>
+			<button type="button" class="promo__btn btn" data-popup-id="popup-delivery">Получить прайс <br>с персональными ценами</button>
+		</div>
+		<div class="promo__label promo-label" data-popup-id="popup-delivery">
+			<div class="promo-label__wrapper">
+				<div class="promo-label__icon"><img src="img/tasks.svg" alt=""></div>
+				<div class="promo-label__text">Получите прайс <br>с персональной ценой</div>
+			</div>
+		</div>
+	</div>
+	
+</section>
+<section class="prices">
+	<div class="prices__container container">
+		<div class="prices__title title">Выгодные цены на <br>металлопрокат в Новосибирске</div>
+		<div class="prices__subtitle subtitle">Обратитесь к менеджеру и он отправит вам цены на нужные позиции</div>
+		<div class="prices__text subtitle">Посмотрите какие товарные группы есть в наличии в Новосибирске</div>
+		<div class="prices__dropdown dropdown-prices dropdown">
+			<div class="dropdown-prices__select dropdown__select">
+				<div class="dropdown-prices__btn dropdown__btn">
+					<div class="dropdown-prices__btn-image"><img src="img/prices/btn-1.svg" alt=""></div>
+					<div class="dropdown-prices__btn-text">Штрипс, лента оцинкованная</div>
+				</div>
+			</div>
+			<div class="dropdown-prices__list dropdown__list">
+				<div class="dropdown-prices__btn dropdown__btn">
+					<div class="dropdown-prices__btn-image"><img src="img/prices/btn-1.svg" alt=""></div>
+					<div class="dropdown-prices__btn-text">Штрипс, лента оцинкованная</div>
+				</div>
+				<div class="dropdown-prices__btn dropdown__btn">
+					<div class="dropdown-prices__btn-image"><img src="img/prices/btn-2.svg" alt=""></div>
+					<div class="dropdown-prices__btn-text">Сетка</div>
+				</div>
+				<div class="dropdown-prices__btn dropdown__btn">
+					<div class="dropdown-prices__btn-image"><img src="img/prices/btn-3.svg" alt=""></div>
+					<div class="dropdown-prices__btn-text">Профиль оцинкованный</div>
+				</div>
+				<div class="dropdown-prices__btn dropdown__btn">
+					<div class="dropdown-prices__btn-image"><img src="img/prices/btn-4.svg" alt=""></div>
+					<div class="dropdown-prices__btn-text">Профнастил</div>
+				</div>
+				<div class="dropdown-prices__btn dropdown__btn">
+					<div class="dropdown-prices__btn-image"><img src="img/prices/btn-5.svg" alt=""></div>
+					<div class="dropdown-prices__btn-text">Черный металлопрокат</div>
+				</div>
+				<div class="dropdown-prices__btn dropdown__btn">
+					<div class="dropdown-prices__btn-image"><img src="img/prices/btn-6.svg" alt=""></div>
+					<div class="dropdown-prices__btn-text">Изделия на заказ</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="prices__tabs prices-tabs">
+			<div class="prices-tabs__nav">
+				<div class="prices-tabs__btn prices-tabs__btn_active">
+					<div class="prices-tabs__image"><img src="img/prices/btn-1.svg" alt=""></div>
+					<div class="prices-tabs__btn-text">Штрипс, лента оцинкованная</div>
+				</div>
+				<div class="prices-tabs__btn">
+					<div class="prices-tabs__image"><img src="img/prices/btn-2.svg" alt=""></div>
+					<div class="prices-tabs__btn-text">Сетка</div>
+				</div>
+				<div class="prices-tabs__btn">
+					<div class="prices-tabs__image"><img src="img/prices/btn-3.svg" alt=""></div>
+					<div class="prices-tabs__btn-text">Профиль оцинкованный</div>
+				</div>
+				<div class="prices-tabs__btn">
+					<div class="prices-tabs__image"><img src="img/prices/btn-4.svg" alt=""></div>
+					<div class="prices-tabs__btn-text">Профнастил</div>
+				</div>
+				<div class="prices-tabs__btn">
+					<div class="prices-tabs__image"><img src="img/prices/btn-5.svg" alt=""></div>
+					<div class="prices-tabs__btn-text">Черный металлопрокат</div>
+				</div>
+				<div class="prices-tabs__btn">
+					<div class="prices-tabs__image"><img src="img/prices/btn-6.svg" alt=""></div>
+					<div class="prices-tabs__btn-text">Изделия на заказ</div>
+				</div>
+			</div>
+			<div class="prices-tabs__content">
+				<div class="prices-tabs__pane prices-tabs__pane_show prices-tabs-pane">
+					<div class="prices-tabs-pane__image"><img src="img/prices/img-1.jpg" alt=""></div>
+					<div class="prices-tabs-pane__body">
+						<div class="prices-tabs-pane__title">Штрипс, лента оцинкованная</div>
+						<ul class="prices-tabs-pane__list">
+							<li class="prices-tabs-pane__item">Оцинкованный штрипс</li>
+							<li class="prices-tabs-pane__item">Оцинкованная стальная лента</li>
+							<li class="prices-tabs-pane__item">Оцинкованная полоса Г/К</li>
+						</ul>
+						<button class="prices-tabs-pane__btn btn">Узнать стоимость</button>
+					</div>
+				</div>
+				<div class="prices-tabs__pane prices-tabs-pane">
+					<div class="prices-tabs-pane__image"><img src="img/prices/img-2.jpg" alt=""></div>
+					<div class="prices-tabs-pane__body">
+						<div class="prices-tabs-pane__title">Сетка</div>
+						<ul class="prices-tabs-pane__list">
+							<li class="prices-tabs-pane__item">Сетка сварная </li>
+							<li class="prices-tabs-pane__item">Сетка ПВЛ</li>
+						</ul>
+						<button class="prices-tabs-pane__btn btn">Узнать стоимость</button>
+					</div>
+				</div>
+				<div class="prices-tabs__pane prices-tabs-pane">
+					<div class="prices-tabs-pane__image"><img src="img/prices/img-3.jpg" alt=""></div>
+					<div class="prices-tabs-pane__body">
+						<div class="prices-tabs-pane__title">Профиль оцинкованный</div>
+						<ul class="prices-tabs-pane__list">
+							<li class="prices-tabs-pane__item">Профиль ГКЛ</li>
+							<li class="prices-tabs-pane__item">Профиль фасадный</li>
+							<li class="prices-tabs-pane__item">Профиль армирующий</li>
+							<li class="prices-tabs-pane__item">Комплектующие</li>
+						</ul>
+						<button class="prices-tabs-pane__btn btn">Узнать стоимость</button>
+					</div>
+				</div>
+				<div class="prices-tabs__pane prices-tabs-pane">
+					<div class="prices-tabs-pane__image"><img src="img/prices/img-4.jpg" alt=""></div>
+					<div class="prices-tabs-pane__body">
+						<div class="prices-tabs-pane__title">Профнастил</div>
+						<div class="prices-tabs-pane__groups">
+							<ul class="prices-tabs-pane__list">
+								<li class="prices-tabs-pane__item">Профнастил С8</li>
+								<li class="prices-tabs-pane__item">Профнастил Н57</li>
+								<li class="prices-tabs-pane__item">Профнастил Н60</li>
+								<li class="prices-tabs-pane__item">Профнастил Н75</li>
+								<li class="prices-tabs-pane__item">Профнастил НС35</li>
+							</ul>
+							<ul class="prices-tabs-pane__list">
+								<li class="prices-tabs-pane__item">Профнастил С13</li>
+								<li class="prices-tabs-pane__item">Профнастил С18</li>
+								<li class="prices-tabs-pane__item">Профнастил С21</li>
+								<li class="prices-tabs-pane__item">Профнастил С44</li>
+								<li class="prices-tabs-pane__item">Профнастил СП20</li>
+							</ul>
+						</div>
+						<button class="prices-tabs-pane__btn btn">Узнать стоимость</button>
+					</div>
+				</div>
+				<div class="prices-tabs__pane prices-tabs-pane">
+					<div class="prices-tabs-pane__image"><img src="img/prices/img-5.jpg" alt=""></div>
+					<div class="prices-tabs-pane__body">
+						<div class="prices-tabs-pane__groups">
+							<div class="prices-tabs-pane__group">
+								<div class="prices-tabs-pane__title">Листовой прокат</div>
+								<ul class="prices-tabs-pane__list">
+									<li class="prices-tabs-pane__item">Лист Х/К</li>
+									<li class="prices-tabs-pane__item">Лист Г/К</li>
+									<li class="prices-tabs-pane__item">Лист НЛГ</li>
+									<li class="prices-tabs-pane__item">Лист ОЦ</li>
+									<li class="prices-tabs-pane__item">Лист рифл</li>
+									<li class="prices-tabs-pane__item">Лист ПВЛ</li>
+									<li class="prices-tabs-pane__item">Лист полимер</li>
+								</ul>
+							</div>
+							<div class="prices-tabs-pane__group">
+								<div class="prices-tabs-pane__title">Сортовой прокат</div>
+								<ul class="prices-tabs-pane__list">
+									<li class="prices-tabs-pane__item">Арматура</li>
+									<li class="prices-tabs-pane__item">Катанка</li>
+									<li class="prices-tabs-pane__item">Круг</li>
+									<li class="prices-tabs-pane__item">Проволока</li>
+									<li class="prices-tabs-pane__item">Квадрат</li>
+									<li class="prices-tabs-pane__item">Шестигранник</li>
+								</ul>
+							</div>
+							<div class="prices-tabs-pane__group">
+								<div class="prices-tabs-pane__title">Трубный прокат</div>
+								<ul class="prices-tabs-pane__list">
+									<li class="prices-tabs-pane__item">Труба профильная</li>
+									<li class="prices-tabs-pane__item">Труба Б/Ш</li>
+									<li class="prices-tabs-pane__item">Труба Э/С</li>
+								</ul>
+							</div>
+							<div class="prices-tabs-pane__group">
+								<div class="prices-tabs-pane__title">Фасонный прокат</div>
+								<ul class="prices-tabs-pane__list">
+									<li class="prices-tabs-pane__item">Балка</li>
+									<li class="prices-tabs-pane__item">Уголок</li>
+									<li class="prices-tabs-pane__item">Швеллер</li>
+								</ul>
+							</div>
+						</div>
+						<button class="prices-tabs-pane__btn btn">Узнать стоимость</button>
+					</div>
+				</div>
+				<div class="prices-tabs__pane prices-tabs-pane">
+					<div class="prices-tabs-pane__image"><img src="img/prices/img-6.jpg" alt=""></div>
+					<div class="prices-tabs-pane__body">
+						<div class="prices-tabs-pane__title">Изделия на заказ</div>
+						<ul class="prices-tabs-pane__list">
+							<li class="prices-tabs-pane__item">по любым вашим размерам</li>
+							<li class="prices-tabs-pane__item">из интересующих марок стали</li>
+							<li class="prices-tabs-pane__item">в соотвествии с ТУ и ГОСТ</li>
+						</ul>
+						<button class="prices-tabs-pane__btn btn">Узнать стоимость</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="get-catalog">
+	<div class="get-catalog__container container">
+		<div class="get-catalog__body">
+			<div class="get-catalog__title title">Получите полный каталог <br>и прайс на металлопрокат</div>
+			<form class="get-catalog__form get-catalog-form">
+				<div class="get-catalog-form__content">
+					<div class="get-catalog-form__grid">
+						<div class="get-catalog-form__wrapper form-field">
+							<label class="form-field__label" class="form-field__label" for="get-catalog-email">Куда отправить прайс и каталог?</label>
+							<input  class="form-field__input" placeholder="E-mail" id="get-catalog-email" type="text">
+						</div>
+						<div class="get-catalog-form__wrapper form-field">
+							<label class="form-field__label" for="get-catalog-company-type">Какую компанию вы представляете?</label>
+							<div class="dropdown">
+								<div  name="company-type" id="get-catalog-company-type" class="dropdown__select get-catalog-form__dropdown-select">
+									<div class="dropdown__btn">Торговая компания, магазин</div>
+								</div>
+								<div class="dropdown__list">
+									<div class="dropdown__btn">Торговая компания, магазин</div>
+								</div>
+							</div>
+						</div>
+						<div class="get-catalog-form__wrapper form-field">
+							<label class="form-field__label" for="get-catalog-name">Как к вам обращаться?</label>
+							<input  class="form-field__input" id="get-catalog-name" placeholder="Ваше имя" type="text">
+						</div>
+						<div class="get-catalog-form__wrapper form-field">
+							<label class="form-field__label" for="get-catalog-phone">Введите телефон</label>
+							<input  class="form-field__input" id="get-catalog-phone" placeholder="+ 7 ( _ _ _ ) - _ _ _ - _ _ - _ _" type="text">
+						</div>
+					</div>
+					<div class="get-catalog-form__descr">Перезвоним, чтобы обсудить условия поставки</div>
+					<div class="get-catalog-form__btn-wrapper">
+						<button class="get-catalog-form__btn btn">Узнать стоимость</button>
+						<div class="get-catalog-form__text">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с Политикой конфиденциальности</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="get-catalog__image"><img src="img/get-catalog-man.png" alt="Мужчина"></div>
+	</div>
+</section>
+<section class="storage">
+	<div class="storage__container container">
+		<div class="storage__title title">Поддерживаем остатки на наших складах</div>
+		<div class="storage__subtitle subtitle">благодаря тщательно спланированному объему производства и сбыта</div>
+		<div class="storage__body">
+			<div class="storage__list">
+				<div class="storage__item storage-item">
+					<div class="storage-item__image"><img src="img/storage/1.jpg" alt=""></div>
+					<div class="storage-item__text"><span>Штрипс, полоса</span> более 1 000 тонн</div>
+				</div>
+				<div class="storage__item storage-item">
+					<div class="storage-item__image"><img src="img/storage/2.jpg" alt=""></div>
+					<div class="storage-item__text"><span>Профиль</span> более 200 тонн</div>
+				</div>
+				<div class="storage__item storage-item">
+					<div class="storage-item__image"><img src="img/storage/3.jpg" alt=""></div>
+					<div class="storage-item__text"><span>Сетка</span> более 300 тонн</div>
+				</div>
+				<div class="storage__item storage-item">
+					<div class="storage-item__image"><img src="img/storage/4.jpg" alt=""></div>
+					<div class="storage-item__text"><span>Профлист</span> более 300 тонн</div>
+				</div>
+			</div>
+			<div class="storage__image">
+				<img src="img/storage/storage.jpg" alt="">
+				<div class="storage__image-descr">Мы специально поддерживаем не снижаемые остатки, чтобы производить отгрузку за 1-2 дня после оплаты</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="big-label">
+	<div class="big-label__container container">
+		<div class="big-label__bg">
+			<div class="big-label__title title">Мы продумали всё, чтобы вы могли купить металлопрокат по выгодной цене и с доставкой за 2-3 дня</div>
+		</div>
+	</div>
+</section>
+<section class="logistics">
+	<div class="logistics__container container">
+		<div class="logistics__row">
+			<div class="logistics__text-block">
+				<div class="logistics__title">Отказались от не разумной логистики<span>Покупайте металлопрокат в вашем городе</span></div>
+				<div class="logistics__text">Раньше мы закупали сырье у различных поставщиков, везли его к себе на базу в Магнитогорске, производили продукцию и после этого отправляли своим клиентам по РФ. Сейчас у нас есть договоренности с нашими партнерами во всех региональных центрах и производство на аутсорсинге. Мы так же самостоятельно закупаем металл и производим металлопрокат на производствах наших партнеров</div>
+			</div>
+			<div class="logistics__image"><img src="img/logistics/1.jpg" alt=""></div>
+		</div>
+		<div class="logistics__row">
+			<div class="logistics__image"><img src="img/logistics/2.jpg" alt=""></div>
+			<div class="logistics__text-block">
+				<div class="logistics__title">Вы не переплачиваете<span>Покупайте у производителя</span></div>
+				<div class="logistics__text">Мы точно так же закупаем сырье, например у поставщика в Липецке и там же заказываем в производство металлопрокат. За счет больших объемов продаж, мы получаем хорошую скидку и экномим на логистике. Так мы делаем в 26 крупных городах РФ</div>
+			</div>
+		</div>
+		<div class="logistics__row">
+			<div class="logistics__text-block">
+				<div class="logistics__title">Покупайте качественный металлопрокат<span>У нас строгие нормы контроля и требования к производству</span></div>
+				<div class="logistics__text">Наше собственное производство находится в Магнитогорске. Мы изготавливаем продукцию строго по ГОСТ и ТЗ. Дорожим нашей деловой репутацией и требуем качества от наших партнеров.</div>
+			</div>
+			<div class="logistics__image"><img src="img/logistics/3.jpg" alt=""></div>
+		</div>
+	</div>
+</section>
+<section class="cost-calc">
+	<div class="cost-calc__container container">
+		<div class="cost-calc__text-block">
+			<div class="cost-calc__title title">Давайте обсудим ваш проект и подготовим его расчет</div>
+			<div class="cost-calc__text">Мы рассчитаем точную стоимость в течение 24 часов, подскажем, на чем вы можете сэкономить и расскажем все о наших возможностях.</div>
+		</div>
+		<form class="cost-calc__form cost-calc-form">
+			<div class="cost-calc-form__wrapper">
+
+				<div class="cost-calc-form__title">Получите предложение на поставку металлопроката</div>
+				<div class="form-field">
+					<label for="" class="form-field__label">Как к вам обращаться?</label>
+					<input placeholder="Ваше имя" type="text" class="form-field__input">
+				</div>
+				<div class="form-field">
+					<label for="" class="form-field__label">Введите телефон</label>
+					<input placeholder="+ 7 ( _ _ _ ) - _ _ _ - _ _ - _ _" type="text" class="form-field__input">
+				</div>
+				<div class="form-field">
+					<label for="" class="form-field__label">Куда отправить прайс и каталог?</label>
+					<input placeholder="E-mail" type="text" class="form-field__input">
+				</div>
+				<div class="cost-calc-form__attach-files"><span><img src="img/clip.svg" alt=""></span> Прикрепите файлы (заказ,спецификацию, смету, если есть)</div>
+				<div class="cost-calc-form__text">Или напишите нам на почту <span>info@tpk-gefest.ru</span></div>
+				<button class="cost-calc-form__btn btn">Узнать стоимость</button>
+				<div class="cost-calc-form__policy">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="policy.html">Политикой конфиденциальности</a></div>
+			</div>
+		</form>
+		<div class="cost-calc__image"><img src="img/cost-calc.png" alt=""></div>
+		<div class="cost-calc__label">Если у вас уже есть предложение от другой компании, прикрепите его к форме. Мы дадим свое
+			предложение по наличию, цене и срокам поставки.
+			<span>Просто попробуйте, уверены, мы вас приятно удивим.</span>
+		</div>
+	</div>
+	
+</section>
+<section class="benefits">
+	<div class="benefits__container container">
+		<div class="benefits__title title">Какие еще выгоды от работы с нами?</div>
+		<div class="benefits__row">
+			<div class="benefits__text-block">
+				<div class="benefits__text-title">Не платите за обрез и лишние объемы</div>
+				<div class="benefits__text">Вы платите только за чистый вес металлопроката без обрези. И покупаете то количество которое вам нужно, мы не округляем объемы.</div>
+			</div>
+			<div class="benefits__image"><img src="img/benefits/img.jpg" alt=""></div>
+		</div>
+	</div>
+	<div class="benefits__divider"></div>
+	<div class="benefits__container container">
+		<div class="benefits__row">
+			<div class="benefits__text-block">
+				<div class="benefits__text-title">Покупайте все в одном месте</div>
+				<div class="benefits__text">За счет собственного проиизводства и производства на базе партнеров мы работаем со всеми основными поставщиками сырья.</div>
+			</div>
+			<div class="benefits__grid">
+				<div class="benefits__grid-image"><img src="img/benefits/1.jpg" alt=""></div>
+				<div class="benefits__grid-image"><img src="img/benefits/2.jpg" alt=""></div>
+				<div class="benefits__grid-image"><img src="img/benefits/3.jpg" alt=""></div>
+				<div class="benefits__grid-image"><img src="img/benefits/4.jpg" alt=""></div>
+			</div>
+		</div>
+
+	</div>
+</section>
+<section class="standards">
+	<div class="standards__container container">
+		<div class="standards__title title">Производимая продукция соответствует регламентам ГОСТ, ОСТ, ТУ и международным стандартам</div>
+		<div class="standards__subtitle suttitle">Вся металлопродукция проходит заводские испытания.</div>
+		<div class="standards__grid">
+			<div class="standards__image"><img src="img/standards/1.jpg" alt=""></div>
+			<div class="standards__image"><img src="img/standards/2.jpg" alt=""></div>
+			<div class="standards__image"><img src="img/standards/3.jpg" alt=""></div>
+			<div class="standards__image"><img src="img/standards/4.jpg" alt=""></div>
+		</div>
+
+		<div class="swiper standards__slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="standards__image"><img src="img/standards/1.jpg" alt=""></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="standards__image"><img src="img/standards/2.jpg" alt=""></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="standards__image"><img src="img/standards/3.jpg" alt=""></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="standards__image"><img src="img/standards/4.jpg" alt=""></div>
+				</div>
+			</div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+	</div>
+	
+</section>
+<section class="order">
+	<div class="order__container container">
+		<div class="order__body">
+			<div class="order__title title">Сделайте первый заказ — и мы станем для вас не просто очередным поставщиком, а
+				партнером, предлагающим лучшие условия по постаке металлопроката</div>
+			<div class="order__text">В 2014 году мы создали компанию и поставили цель стать крупнейшим поставщиком металлопроката в
+				РФ и СНГ. Наш приоритет — предлагать клиентам лучший продукт по качеству и логистике.</div>
+			<div class="order__text">Я понимаю, что сейчас на рынке очень много предложений, и трудно выбрать надежного партнера. Мы искренне заинтересованы в том, чтобы <span>решить любую задачу вашей компании и предложить лучшие условия сотрудничества.</span></div>
+			<div class="order__wrapper">
+				<div class="order__image"><img src="img/order.jpg" alt=""></div>
+				<div class="order__label"><span>Иванов Иван Эдуардович</span>генеральный директор компании ТПК ГЕФЕСТ</div>
+			</div>
+			<div class="order__form order-form form-field">
+				<div class="order-form__descr form-field__label"><span>Давайте обсудим ваш заказ прямо сейчас</span> Оставьте свой
+					номер, мы свяжемся с вами, ответим на любые вопросы и расскажем больше о наших возможностях, назовем сроки и цену
+					исполнения вашего заказа.</div>
+				<label for="" class="order-form__label form-field__label">Введите телефон</label>
+				<div class="order-form__wrapper">
+					<input placeholder="+ 7 ( _ _ _ ) - _ _ _ - _ _ - _ _" type="text" class="form-field__input order-form__input">
+					<button class="order-form__btn btn">Обсудить заказ</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="footer">
+	<div class="footer__container container">
+		<div class="footer__row">
+			<div class="footer__logo logo">
+				<a href="#" class="logo__link">GEFEST</a>
+				<div class="logo__descr">Производство и продажа<br>металлопроката</div>
+			</div>
+			<div class="footer__grid">
+				<a href="#" class="footer__social footer-social">
+					<div class="footer-social__image"><img src="img/Telegram.svg" alt=""></div>
+					<div class="footer-social__text">Telegram</div>
+				</a>
+				<a href="#" class="footer__social footer-social">
+					<div class="footer-social__image"><img src="img/Whatsapp.svg" alt=""></div>
+					<div class="footer-social__text">WhatsApp</div>
+				</a>
+				<a href="#" class="footer__social footer-social">
+					<div class="footer-social__image"><img src="img/Viber.svg" alt=""></div>
+					<div class="footer-social__text">Viber</div>
+				</a>
+				<a href="#" class="footer__social footer-social">
+					<div class="footer-social__image"><img src="img/Skype.svg" alt=""></div>
+					<div class="footer-social__text">Skype</div>
+				</a>
+			</div>
+			<div class="header__body">
+				<button type="button" class="header__btn btn">У вас уже есть поставщик?</button>
+				<div class="header__phone-block">
+					<a href="tel:+7 (495) 444-44-44" class="header__phone">+7 (495) 444-44-44</a>
+					<button type="button" data-popup-id="popup-callback" class="header__callback"><img src="img/phone.svg" alt="обратный вызов"><span>Заказать обратный звонок</span></button>
+				</div>
+			</div>
+		</div>
+		<div class="footer__row">
+			<a href="#" class="footer__link">Политика конфиденциальности</a>
+			<a href="#" class="footer__link">Пользовательское соглашение</a>
+			<a href="#" class="footer__link">Разработка сайта <img src="img/solution.png" alt=""></a>
+		</div>
+	</div>
+</footer>
+<div class="popup popup-delivery" id="popup-delivery">
+	<div class="popup__dialog container">
+		<button class="popup__close">✕</button>
+		<div class="popup-delivery__content">
+			<div class="popup-delivery__title title">Получите выгодное предложение на поставку металлопроката</div>
+			<div class="popup-delivery__subtitle subtitle">Если у вас уже есть предложение от другой компании, прикрепите его к форме.<br> Мы дадим свое предложение по наличию, цене и срокам поставки.</div>
+			<div class="popup-delivery__row">
+				<div class="popup-delivery__image"><img src="img/cost-calc.png" alt=""></div>
+				<form class="popup-delivery__form cost-calc-form">
+					<div class="cost-calc-form__wrapper">
+						<div class="cost-calc-form__title">Отправьте свой запрос, уверены, мы вас приятно удивим.</div>
+						<div class="form-field">
+							<label for="" class="form-field__label">Как к вам обращаться?</label>
+							<input placeholder="Ваше имя" type="text" class="form-field__input">
+						</div>
+						<div class="form-field">
+							<label for="" class="form-field__label">Введите телефон</label>
+							<input placeholder="+ 7 ( _ _ _ ) - _ _ _ - _ _ - _ _" type="text" class="form-field__input">
+						</div>
+						<div class="form-field">
+							<label for="" class="form-field__label">Куда отправить прайс и каталог?</label>
+							<input placeholder="E-mail" type="text" class="form-field__input">
+						</div>
+						<div class="cost-calc-form__attach-files"><span><img src="img/clip.svg" alt=""></span> Прикрепите файлы
+							(заказ,спецификацию, смету, если есть)</div>
+						<div class="cost-calc-form__text">Или напишите нам на почту <span>info@tpk-gefest.ru</span></div>
+						<button class="cost-calc-form__btn btn">Узнать стоимость</button>
+						<div class="cost-calc-form__policy">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и
+							соглашаетесь с <a href="policy.html">Политикой конфиденциальности</a></div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup popup-callback" id="popup-callback">
+	<div class="popup__dialog container">
+		<button class="popup__close">✕</button>
+		<div class="popup-callback__content">
+			<div class="popup-callback__image"><img src="img/popup-callback.png" alt=""></div>
+			<form class="popup-callback__form cost-calc-form">
+				<div class="cost-calc-form__wrapper">
+					<div class="cost-calc-form__title">Укажите контактные данные и удобное время для звонка</div>
+					<div class="form-field">
+						<label for="" class="form-field__label">Как к вам обращаться?</label>
+						<input placeholder="Ваше имя" type="text" class="form-field__input">
+					</div>
+					<div class="form-field">
+						<label for="" class="form-field__label">Введите телефон</label>
+						<input placeholder="+ 7 ( _ _ _ ) - _ _ _ - _ _ - _ _" type="text" class="form-field__input">
+					</div>
+					<div class="form-field">
+						<label for="" class="form-field__label">Когда вам позвонить?</label>
+						<div class="form-field__tabs">
+							<button class="form-field__tabs-btn form-field__tabs-btn_active">Сейчас</button>
+							<button class="form-field__tabs-btn">По времени</button>
+						</div>
+						<input disabled placeholder="Например: 21 января в 14:00" type="text" class="form-field__input">
+					</div>
+					<button class="cost-calc-form__btn btn">Узнать стоимость</button>
+					<div class="cost-calc-form__policy">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="policy.html">Политикой конфиденциальности</a></div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
