@@ -3,4 +3,5 @@
 **Hard table** [Перейти](https://vovako.github.io/hard_table/)\
 **Mulih** [Перейти](https://vovako.github.io/mulih/)\
 **Gefest** [Перейти](https://vovako.github.io/gefest/)\
-**SomeCompany** [Перейти](https://vovako.github.io/some_company/)
+**SomeCompany** [Перейти](https://vovako.github.io/some_company/)\
+**Invite Users (React)** [Перейти](https://vovako.github.io/invite_users/)
