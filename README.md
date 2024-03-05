@@ -5,4 +5,5 @@
 **Gefest** [Перейти](https://vovako.github.io/gefest/)\
 **SomeCompany** [Перейти](https://vovako.github.io/some_company/)\
 **Invite Users (React)** [Перейти](https://vovako.github.io/invite_users/)\
-**OKEI quiz (React)** [Перейти](https://vovako.github.io/okei_quiz/)
+**OKEI quiz (React)** [Перейти](https://vovako.github.io/okei_quiz/)\
+**Kusya stream (React)** [Перейти](https://vovako.github.io/kusya_stream/)
