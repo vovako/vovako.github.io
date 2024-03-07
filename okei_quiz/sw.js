@@ -3,30 +3,19 @@ let assetsUrls = [
 	'./index.html',
 ]
 
-
-
-self.addEventListener('install', (event) => {
+self.addEventListener('install', async (e) => {
 	console.log('[SW] install');
-	// console.log(JSON.parse(new URLSearchParams(location.search).get('asset_urls')));
-
-	// const list = self.performance.getEntriesByType('resource')
-	// list.forEach(i => {
-	// 	const result = i.name.match(/\/([^\/^\?]+)(\?[^\?]*)?$/)[1]
-	// 	console.log(result);
-	// })
-	// const asset_urls = await 
-
+	e.waitUntil(new Promise((resolve) => {
+		self.addEventListener('message', async (event) => {
+			assetsUrls.push(...event.data)
+			const cache = await caches.open(STATIC_CACHE_NAME)
+			await cache.addAll(assetsUrls)
+			resolve()
+		})
+	}))
 })
 
-self.addEventListener('message', async (event) => {
-	assetsUrls.push(...event.data)
-	const cache = await caches.open(STATIC_CACHE_NAME)
-	await cache.addAll(assetsUrls)
-});
-
-
 self.addEventListener('activate', (event) => {
-	console.log('[SW] Activating Service Worker ....', event);
 	event.waitUntil(
 		caches.keys()
 			.then((keyList) => {
@@ -40,3 +29,14 @@ self.addEventListener('activate', (event) => {
 	);
 	return self.clients.claim();
 });
+
+self.addEventListener('fetch', (event) => {
+	console.log('[SW fetch]', event.request.url);
+
+	event.respondWith(cacheFirst(event.request))
+})
+
+async function cacheFirst(request) {
+	const cached = await caches.match(request)
+	return cached;
+}
