@@ -5,8 +5,8 @@ let assetsUrls = [
 
 self.addEventListener('install', async (event) => {
 	console.log('[SW] install', event);
-	
-	const list = window.performance.getEntriesByType('resource')
+
+	const list = self.performance.getEntriesByType('resource')
 	list.forEach(i => {
 		const result = i.name.match(/\/([^\/^\?]+)(\?[^\?]*)?$/)[1]
 		console.log(result);
