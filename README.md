@@ -1,3 +1,16 @@
+Меня зовут Владимир Кондауров
+========================================================================================================================================
+
+Я Front-end разработчик из Оренбурга (Россия)
+<br/>
+
+### Навыки
+
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,ts,react,ts,scss,figma)](https://skillicons.dev)
+<br/>
+
+### Проекты
+
 **Crypto pay** [Перейти](https://vovako.github.io/crypto_pay/)\
 **Dream tour** [Перейти](https://vovako.github.io/dreamkam_tour/)\
 **Hard table** [Перейти](https://vovako.github.io/hard_table/)\
