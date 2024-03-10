@@ -2,6 +2,7 @@ const STATIC_CACHE_NAME = 'offline-cache'
 let assetsUrls = [
 	'./',
 	'./index.html',
+	'./favicon.ico'
 ]
 
 self.addEventListener('install', async (e) => {
