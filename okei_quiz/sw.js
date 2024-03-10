@@ -1,17 +1,11 @@
 const STATIC_CACHE_NAME = 'offline-cache'
-let assetsUrls = [
-	'./',
-	'./index.html',
-	'./favicon.ico'
-]
 
 self.addEventListener('install', async (e) => {
 	console.log('[SW] install');
 	e.waitUntil(new Promise((resolve) => {
 		self.addEventListener('message', async (event) => {
-			assetsUrls.push(...event.data)
-
-			console.log(assetsUrls);
+			const assetsUrls = event.data
+			console.log('assets urls', assetsUrls);
 
 			const cache = await caches.open(STATIC_CACHE_NAME)
 			await cache.addAll(assetsUrls)
