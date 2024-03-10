@@ -1,5 +1,6 @@
 const STATIC_CACHE_NAME = 'offline-cache'
 let assetsUrls = [
+	'./',
 	'./index.html',
 ]
 
