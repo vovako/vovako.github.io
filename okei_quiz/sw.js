@@ -10,6 +10,9 @@ self.addEventListener('install', async (e) => {
 	e.waitUntil(new Promise((resolve) => {
 		self.addEventListener('message', async (event) => {
 			assetsUrls.push(...event.data)
+
+			console.log(assetsUrls);
+
 			const cache = await caches.open(STATIC_CACHE_NAME)
 			await cache.addAll(assetsUrls)
 			resolve()
