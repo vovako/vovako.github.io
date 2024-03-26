@@ -17,14 +17,14 @@
 		<section class="dreams">
 			<header class="header">
 				<div class="header__container container">
-					<div class="header__image"><img src="img/icons/h-logo.svg" alt="логотип"></div>
+					<div class="header__image"><img src="./img/icons/h-logo.svg" alt="логотип"></div>
 					<div class="header__body">
 						<nav class="header__menu">
-							<div class="header__menu-item">Расписание тура</div>
-							<div class="header__menu-item">Как записаться</div>
-							<div class="header__menu-item">Команда</div>
+							<div data-target="plan" class="header__menu-item">Расписание тура</div>
+							<div data-target="how-join" class="header__menu-item">Как записаться</div>
+							<div data-target="crew" class="header__menu-item">Команда</div>
 						</nav>
-						<button class="header__btn">Забронировать</button>
+						<button class="header__btn" data-target="how-join">Забронировать</button>
 					</div>
 					<button class="header__menu-icon menu-icon">
 						<span></span>
@@ -34,12 +34,12 @@
 					<div class="header__md-menu md-menu">
 						<button class="md-menu__close"></button>
 						<nav class="header__menu">
-							<div class="header__menu-item">Расписание тура</div>
-							<div class="header__menu-item">Как записаться</div>
-							<div class="header__menu-item">Команда</div>
-							<div class="header__menu-item">Стоимость</div>
+							<div data-target="plan" class="header__menu-item">Расписание тура</div>
+							<div data-target="how-join" class="header__menu-item">Как записаться</div>
+							<div data-target="crew" class="header__menu-item">Команда</div>
+							<div data-target="costs" class="header__menu-item">Стоимость</div>
 						</nav>
-						<button class="header__btn">Забронировать</button>
+						<button class="header__btn" data-target="how-join">Забронировать</button>
 					</div>
 				</div>
 			</header>
@@ -50,7 +50,7 @@
 						<div class="dreams__label">23.06 - 04.07 DREAM TOUR</div>
 						<div class="dreams__subtitle">Тур перевернет ваш мир с ног на голову и оставит впечатления на всю жизнь.
 						</div>
-						<div class="dreams__timesheet dreams-timesheet">
+						<div class="dreams__timesheet dreams-timesheet" id="plan">
 							<a href="#" class="dreams-timesheet__link">Расписание тура</a>
 							<a href="#">
 								<div class="dreams-timesheet__arrow circle-arrow"></div>
@@ -728,7 +728,7 @@
 					Возвращайтесь следующим летом!</div>
 			</div>
 		</section>
-		<section class="cost">
+		<section class="cost" id="costs">
 			<div class="cost__container container">
 				<div class="cost__title title">Стоимость участия</div>
 				<div class="cost__wrapper">
@@ -786,7 +786,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="request">
+		<section class="request" id="how-join">
 			<div class="request__bg"><img src="img/request/bg.jpg" alt=""></div>
 			<div class="request__container container">
 				<div class="request__wrapper">
@@ -854,7 +854,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="team">
+		<section class="team" id="crew">
 			<div class="team__container container">
 				<div class="team__title title">Про нашу супер крутую команду Dreamkam Tour</div>
 				<div class="team__text text">Наша команда - это люди влюбленные в свою работу. Каждый из них обладает

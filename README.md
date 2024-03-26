@@ -12,11 +12,11 @@
 ### Проекты
 
 **Crypto pay** [Перейти](https://vovako.github.io/crypto_pay/)\
+**Radio vibe (React)** [Перейти](https://vovako.github.io/radio_vibe/)\
 **Dream tour** [Перейти](https://vovako.github.io/dreamkam_tour/)\
-**Hard table** [Перейти](https://vovako.github.io/hard_table/)\
-**Mulih** [Перейти](https://vovako.github.io/mulih/)\
+**OKEI quiz (React)** [Перейти](https://vovako.github.io/okei_quiz/)\
+**Invite Users (React)** [Перейти](https://vovako.github.io/invite_users/)\
 **Gefest** [Перейти](https://vovako.github.io/gefest/)\
 **SomeCompany** [Перейти](https://vovako.github.io/some_company/)\
-**Invite Users (React)** [Перейти](https://vovako.github.io/invite_users/)\
-**OKEI quiz (React)** [Перейти](https://vovako.github.io/okei_quiz/)\
-**Kusya stream (React)** [Перейти](https://vovako.github.io/kusya_stream/)
+**Hard table** [Перейти](https://vovako.github.io/hard_table/)\
+**Mulih** [Перейти](https://vovako.github.io/mulih/)

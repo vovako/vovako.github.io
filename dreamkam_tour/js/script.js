@@ -149,5 +149,19 @@ menuBtn.addEventListener('click', function () {
 })
 menuClose.addEventListener('click', function () {
 	menu.classList.remove('active')
-	document.body.style.overflow = 'visible'
+	document.body.style.overflow = null
+})
+
+document.addEventListener('click', (evt) => {
+	const target = evt.target
+	const hasClass = (className) => target.classList.contains(className)
+
+	if (hasClass('header__menu-item') || hasClass('header__btn')) {
+		const sectionTarget = document.querySelector('#' + target.dataset.target)
+		menu.classList.remove('active')
+		document.body.style.overflow = null
+		sectionTarget.scrollIntoView({
+			behavior: 'smooth'
+		})
+	}
 })
