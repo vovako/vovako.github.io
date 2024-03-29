@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/favicon.svg" type="image/svg">
+	<title>Портфолио</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<script type="module" defer src="./js/script.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<button class="logo">Volodya.dev</button>
+		<nav class="menu">
+			<button data-target="main" class="menu-item active">Главная</button>
+			<button data-target="projects" class="menu-item">Проекты</button>
+			<button data-target="about" class="menu-item">Обо мне</button>
+			<button data-target="contacts" class="menu-item">Контакты</button>
+			<span class="menu-marker"></span>
+			<button class="menu__close-btn">
+				<span></span>
+				<span></span>
+			</button>
+		</nav>
+		<button class="header__menu-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+	</header>
+
+	<section class="main observed-section" id="main">
+		<div class="main-bg">
+			<div class="main-bg__title title">&ltMain /&gt</div>
+			<div class="main-bg__pattern"></div>
+			<img class="main-bg__img-1" src="./img/main-decor-1.png" alt="">
+			<img class="main-bg__img-2" src="./img/main-decor-2.png" alt="">
+		</div>
+		<div class="main__contaner container">
+			<div class="main-offer">
+				<div class="main-offer__body">
+					<div class="main-offer__title">Front-end React Developer</div>
+					<div class="main-offer__text">Привет, меня зовут Владимир Кондауров, я разработчик из Оренбурга</div>
+					<div class="main-offer__links">
+						<a href="https://github.com/vovako" target="_blank" title="Github" class="main-offer__link"><img
+								src="./img/github.svg" alt=""></a>
+					</div>
+				</div>
+				<div class="main-offer__image">
+					<img src="./img/photo.jpg" alt="">
+				</div>
+			</div>
+			<div class="main-skills">
+				<span>Навыки =></span>
+				<img src="./img/html.png" title="HTML" alt="HTML" class="main-skills__item">
+				<img src="./img/css.png" title="CSS" alt="CSS" class="main-skills__item">
+				<img src="./img/js.png" title="JS" alt="JS" class="main-skills__item">
+				<img src="./img/react.png" title="React" alt="React" class="main-skills__item">
+				<img src="./img/ts.png" title="TS" alt="TS" class="main-skills__item">
+				<img src="./img/sass.png" title="Sass" alt="Sass" class="main-skills__item">
+				<img src="./img/figma.png" title="Figma" alt="Figma" class="main-skills__item">
+			</div>
+		</div>
+	</section>
+
+	<section class="projects observed-section" id="projects">
+		<div class="project crypto-pay-project">
+			<div class="projects__title title">&ltProjects /&gt</div>
+			<div class="project__container container">
+				<div class="project__body">
+					<div class="project__title">Crypto pay</div>
+					<div class="project__descr">
+						Делал вёрстку сайта по макету для конкурса, в тором принимало участие более ста человек, в итоге занял 3
+						место, за счет
+						хорошей адаптации и вручную прописанных css анимаций
+					</div>
+					<ul class="project__features">
+						<li>Переключение темы</li>
+						<li>Анимации</li>
+						<li>Desktop first адаптив</li>
+					</ul>
+					<div class="project__tools">
+						<img class="main-skills__item" src="./img/html.png" alt="">
+						<img class="main-skills__item" src="./img/js.png" alt="">
+						<img class="main-skills__item" src="./img/sass.png" alt="">
+					</div>
+					<div class="project__footer">
+						<a href="https://vovako.github.io/crypto_pay/" target="_blank" class="project__link">Открыть демо <img
+								src="./img/open.svg" alt=""></a>
+						<a href="https://github.com/vovako/crypto_pay" target="_blank" class="project__link">Код <img
+								src="./img/github.svg" alt=""></a>
+					</div>
+				</div>
+				<div class="project__slider slider">
+					<div class="slider__line">
+						<div class="slider__slide active">
+							<img src="./img/proj_1_1.png" alt="">
+						</div>
+						<div class="slider__slide">
+							<img src="./img/proj_1_2.png" alt="">
+						</div>
+						<div class="slider__slide">
+							<img src="./img/proj_1_3.png" alt="">
+						</div>
+					</div>
+
+					<div class="slider__wrapper">
+						<div class="slider__dot active"></div>
+						<div class="slider__dot"></div>
+						<div class="slider__dot"></div>
+					</div>
+				</div>
+				<div class="project__title-mobile">Crypto pay</div>
+			</div>
+		</div>
+
+		<div class="project radio-vibe-project">
+			<div class="project__container container">
+				
+				<div class="project__body">
+					<div class="project__title">Radio vibe</div>
+					<div class="project__descr">
+						На учебной практике дали задание сделать приложение для воспроизведения музыки, я сделал макет в figma, и на
+						его основе сделал PWA на React
+					</div>
+					<ul class="project__features">
+						<li>Аудио визуализатор</li>
+						<li>Audio API</li>
+						<li>Mobile first адаптив</li>
+					</ul>
+					<div class="project__tools">
+						<img class="main-skills__item" src="./img/react.png" alt="">
+						<img class="main-skills__item" src="./img/js.png" alt="">
+						<img class="main-skills__item" src="./img/sass.png" alt="">
+						<img class="main-skills__item" src="./img/figma.png" alt="">
+					</div>
+					<div class="project__footer">
+						<a href="https://vovako.github.io/radio_vibe/" target="_blank" class="project__link">Открыть демо <img
+								src="./img/open.svg" alt=""></a>
+						<a href="https://github.com/vovako/radio_vibe" target="_blank" class="project__link">Код <img src="./img/github.svg"
+								alt=""></a>
+					</div>
+				</div>
+				<div class="project__slider slider">
+					<div class="slider__line">
+						<div class="slider__slide active">
+							<img src="./img/proj_2_1.png" alt="">
+						</div>
+						<div class="slider__slide">
+							<img src="./img/proj_2_2.png" alt="">
+						</div>
+						<div class="slider__slide">
+							<img src="./img/proj_2_3.png" alt="">
+						</div>
+					</div>
+
+					<div class="slider__wrapper">
+						<div class="slider__dot active"></div>
+						<div class="slider__dot"></div>
+						<div class="slider__dot"></div>
+					</div>
+				</div>
+				<div class="project__title-mobile">Radio vibe</div>
+			</div>
+		</div>
+
+		<div class="project dream-tour-project">
+			<div class="project__container container">
+
+				<div class="project__body">
+					<div class="project__title">Dream tour</div>
+					<div class="project__descr">
+						Одина из тех вёрсток, за которые не стыдно, когда учился верстать, нашел этот красивый макет.
+						Верстая и адаптируя этот лендиг, я получил много опыта - по работе с позиционированием, слоями, использовании библиотек (swiper)
+					</div>
+					<ul class="project__features">
+						<li>Верстка средней сложности</li>
+						<li>Desktop first адаптив</li>
+					</ul>
+					<div class="project__tools">
+						<img class="main-skills__item" src="./img/html.png" alt="">
+						<img class="main-skills__item" src="./img/sass.png" alt="">
+						<img class="main-skills__item" src="./img/js.png" alt="">
+					</div>
+					<div class="project__footer">
+						<a href="https://vovako.github.io/dreamkam_tour/" target="_blank" class="project__link">Открыть демо <img
+								src="./img/open.svg" alt=""></a>
+						<a href="https://github.com/vovako/dream_tour" target="_blank" class="project__link">Код <img
+								src="./img/github.svg" alt=""></a>
+					</div>
+				</div>
+				<div class="project__slider slider">
+					<div class="slider__line">
+						<div class="slider__slide active">
+							<img src="./img/proj_3_1.png" alt="">
+						</div>
+						<div class="slider__slide">
+							<img src="./img/proj_3_2.png" alt="">
+						</div>
+						<div class="slider__slide">
+							<img src="./img/proj_3_3.png" alt="">
+						</div>
+					</div>
+
+					<div class="slider__wrapper">
+						<div class="slider__dot active"></div>
+						<div class="slider__dot"></div>
+						<div class="slider__dot"></div>
+					</div>
+				</div>
+				<div class="project__title-mobile">Dream tour</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about observed-section" id="about">
+		<div class="about__title title">&ltAbout /&gt</div>
+		<div class="about__container container">
+			<p>Меня зовут Владимир Кондауров, я специализируюсь на фронтенд разработке.</p>
+			<p>Начав изучение вёрстки сайтов в 2019, я шаг за шагом изучал эту область и практиковался. Понемногу открывая для
+				себя возможности JavaScript.</p>
+			<p>Накопив достаточно опыта, я в 2021 начал предоставлять услуги на фриланс бирже. Сначала это были заказы по
+				верстке с макета, создание сайтов без макета на чистых HTML, CSS, JS.</p>
+			<p>Позже, попробовав все популярные фреймворки, я выбрал React, и теперь умею делать SPA, PWA приложения.</p>
+		</div>
+	</section>
+
+	<section class="contacts observed-section" id="contacts">
+		<div class="contacts__title title">&ltContacts /&gt</div>
+		<div class="contacts__container container">
+			<div class="contacts__list">
+				<div class="contacts-item">
+					<div class="contacts-item__img"><img src="./img/location.svg" alt=""></div>
+					<div class="contacts-item__body">
+						<div class="contacts-item__title">Место жительства</div>
+						<div class="contacts-item__text">Оренбург, Россия</div>
+					</div>
+				</div>
+				<div class="contacts-item">
+					<div class="contacts-item__img"><img src="./img/email.svg" alt=""></div>
+					<div class="contacts-item__body">
+						<div class="contacts-item__title">Email</div>
+						<div class="contacts-item__text">vladimirkondaurov38@gmail.com</div>
+					</div>
+				</div>
+				<div class="contacts-item">
+					<div class="contacts-item__img"><img src="./img/tg.svg" alt=""></div>
+					<div class="contacts-item__body">
+						<div class="contacts-item__title">Telegram</div>
+						<a target="_blank" href="https://t.me/volodya455" class="contacts-item__text">@volodya455</a>
+					</div>
+				</div>
+				<div class="contacts-item">
+					<div class="contacts-item__img"><img src="./img/github2.svg" alt=""></div>
+					<div class="contacts-item__body">
+						<div class="contacts-item__title">Github</div>
+						<a target="_blank" href="https://github.com/vovako" class="contacts-item__text">github.com/vovako</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__divider"></div>
+		<div class="footer__container container">
+			<div class="footer__copyright">Vladimir Kondaurov @<span class="copyright-year"></span></div>
+		</div>
+	</footer>
+</body>
+
+</html>
