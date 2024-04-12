@@ -469,16 +469,27 @@ body {
 .project {
   padding: clamp(50px, 10vw, 150px) 0;
   transform: skewY(3deg);
+}
+.project::before {
+  content: "";
   filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.35));
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 .project.crypto-pay-project {
   padding-top: clamp(80px, 10vw, 150px);
+}
+.project.crypto-pay-project::before {
   background: linear-gradient(45deg, hsl(224, 82%, 76%), hsl(224, 82%, 90%)) center/cover;
 }
-.project.radio-vibe-project {
+.project.radio-vibe-project::before {
   background: linear-gradient(-45deg, hsl(323, 100%, 86%), hsl(323, 100%, 93%)) center/cover;
 }
-.project.dream-tour-project {
+.project.dream-tour-project::before {
   background: linear-gradient(45deg, hsl(241, 29%, 70%), hsl(241, 29%, 88%)) center/cover;
 }
 .project__container {
